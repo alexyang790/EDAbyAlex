@@ -32,3 +32,24 @@ from extractor import extractor
 
 ## Initialize with a File Path 
 
+## Requirements
+
+- pandas >= 1.0.0
+- numpy >= 1.18.0
+- openpyxl >= 3.0.0 (for Excel support)
+
+## Version
+
+Current version: 0.1.0
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Alex Yang
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!
