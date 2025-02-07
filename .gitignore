@@ -174,3 +174,4 @@ data/
 dist/
 build/
 edabyalex.egg=info/
+local_test.py
