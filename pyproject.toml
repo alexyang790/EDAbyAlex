@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "edabyalex"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
     { name="Alex Yang", email="zy7ts@virginia.edu" },
 ]
@@ -31,6 +31,13 @@ dependencies = [
 
 [tool.hatch.build]
 packages = ["extractor"]
+exclude = [
+    "data/",
+    "local_test.py",
+    "venv/",
+    "__pycache__/",
+    "*.pyc"
+]
 
 [tool.hatch.build.targets.wheel]
 only-include = ["extractor"]
@@ -40,4 +47,11 @@ include = [
     "extractor",
     "LICENSE",
     "README.md"
+]
+exclude = [
+    "data/",
+    "local_test.py",
+    "venv/",
+    "__pycache__/",
+    "*.pyc"
 ]
