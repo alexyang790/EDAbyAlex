@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "edabyalex"
+version = "0.1.0"
+authors = [
+    { name="Alex Yang", email="zy7ts@virginia.edu" },
+]
+description = "A Python package for streamlined Exploratory Data Analysis (EDA)"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "pandas>=1.0.0",
+    "numpy>=1.18.0",
+    "openpyxl>=3.0.0",
+    "glob2>=0.7",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/alexyang790/EDAbyAlex"
+
+[tool.hatch.build]
+packages = ["extractor"]
+
+[tool.hatch.build.targets.wheel]
+only-include = ["extractor"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "extractor",
+    "LICENSE",
+    "README.md"
+]
