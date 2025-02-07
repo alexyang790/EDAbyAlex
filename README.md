@@ -135,7 +135,10 @@ except TypeError as e:
 
 ## Version History
 
-### 0.1.1 (Current)
+### 0.1.2 (updating documentation)
+- Updated README.md
+
+### 0.1.1 (export feature)
 - Added export functionality
 - Improved package build configuration
 - Enhanced error handling
